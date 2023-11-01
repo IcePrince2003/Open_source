@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="add-student.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <title>Quản lý học sinh</title>
+    </head>
+    <body>
+        <div id="form" style="z-index: 0;"></div>
+        <div style="height: 700px;width: 800px; background-color: red; z-index: 10;"></div>
+        <div class="form">
+            <h1 id="header">
+                Quản lý học sinh
+            </h1>
+            <fieldset id="student-information">
+                <legend>Thông tin học sinh</legend>
+                <div class="group_information">
+                    <div>    
+                        <label for="fullname"> Họ tên: </label>
+                        <input type="text" id = "fullname" class = "student" style="width: 490px;">
+                    </div>
+                    <div style=" margin-left: 20px;">
+                        <label for="gender">Giới tính: </label>
+                        <select name="" id="gender" style="font-size: 25px; width: 100px;">
+                            <optgroup>
+                                <option value="male">Nam</option>
+                                <option value="female">Nữ</option>
+                            </optgroup>
+                        </select>
+                    </div>     
+                </div>
+                <div class="group_information">
+                    <div >
+                        <label for="id-student">Mã học sinh: </label>
+                        <input type="text" id="id-student" style="width: 125px;" oninput="numberKeyPress(this)">
+                    </div>
+                    <div style="margin-left: 45px;">
+                        <label for="id-student">Lớp: </label>
+                        <input type="text" id="id-student" class = "student"style="width: 70px;">
+                    </div>
+                    <div class="birthday" style="margin-left: 45px;">
+                        <label for="birthday">Ngày sinh: </label>
+                        <input type="date" id="birthday-date" style="width: 180px;">
+                    </div>
+                </div>
+                <div class="group_information">
+                    <div>
+                        <label for="nation">Quốc tịch: </label>
+                        <input type="text" name="" id="nation" class = "student" style="width: 130px;">
+                    </div>
+                    <div style="margin-left: 20px;">
+                        <label for="region">Dân tộc: </label>
+                        <select name="" class="choose-region" style="font-size: 25px; overflow: scroll; ">
+                        </select>
+                    </div>
+                    <div style="margin-left: 20px;">
+                        <label for="religion">Tôn giáo: </label>
+                        <input type="text" name="" id="religion" class="" style="width: 130px;">
+                    </div>
+                </div>
+                <div class="group_information">
+                    <label for="address">Hộ khẩu thường trú:&nbsp;</label>
+                    <input type="text" id="address" style="width: 577px;">
+                </div>
+                <fieldset>
+                    <legend>Thông tin phụ huynh</legend>
+                    <div>
+                        <label for="">Họ và tên bố: </label>
+                        <input type="text" style="width: 610px;">
+                    </div>
+                    <div class="group_information">
+                        <div class="birthday">
+                            <label for="dad-birthday">Ngày sinh: </label>
+                            <input type="date" id="dad-birthday" style=" width: 175px;">
+                        </div>
+                        <div style="margin-left: 15px;">
+                            <label for="id">Mã CCCD: </label>
+                            <input type="text" name="" id="id" oninput="numberKeyPress(this)" style="width: 320px;" maxlength="12">
+                        </div>
+                    </div>
+                    <div class="group_information">
+                        <label for="ID-address">Nơi cấp:&nbsp;</label>
+                        <input type="text" name="" id="ID-address" style="width: 665px;">
+                    </div>
+                    <div class="group_information">
+                        <div>
+                            <label for="nation">Quốc tịch: </label>
+                            <input type="text" name="" id="nation" style="width: 130px;">
+                        </div>
+                        <div style="margin-left: 10px;">
+                            <label for="region">Dân tộc: </label>
+                            <select name="" class="choose-region" style="font-size: 25px; overflow: scroll;">
+                            </select>
+                        </div>
+                        <div style="margin-left: 15px;">
+                            <label for="religion">Tôn giáo: </label>
+                            <input type="text" name="" id="religion" style="width: 105px;">
+                        </div>
+                    </div>
+                    <div class="group_information">
+                        <label for="dad-job">Nghề nghiệp:&nbsp;</label>
+                        <input type="text" name="" id="dad-job" style="width: 612px;">
+                    </div>
+                    <div class="group_information">
+                        <label for="">Họ và tên mẹ:&nbsp;</label>
+                        <input type="text" style="width: 605px;">
+                    </div>
+                    <div class="group_information">
+                        <div class="birthday">
+                            <label for="dad-birthday">Ngày sinh: </label>
+                            <input type="date" id="dad-birthday" style=" width: 175px;">
+                        </div>
+                        <div style="margin-left: 15px;">
+                            <label for="id">Mã CCCD: </label>
+                            <input type="text" name="" id="id" oninput="numberKeyPress(this)" style="width: 320px;" maxlength="12">
+                        </div>
+                    </div>
+                    <div class="group_information">
+                        <label for="ID-address">Nơi cấp:&nbsp;</label>
+                        <input type="text" name="" id="ID-address" style="width: 665px;">
+                    </div>
+                    <div class="group_information">
+                        <div>
+                            <label for="nation">Quốc tịch: </label>
+                            <input type="text" name="" id="nation" style="width: 130px;">
+                        </div>
+                        <div style="margin-left: 10px;">
+                            <label for="region">Dân tộc: </label>
+                            <select name="" class="choose-region" style="font-size: 25px; overflow: scroll;">
+                            </select>
+                        </div>
+                        <div style="margin-left: 15px;">
+                            <label for="religion">Tôn giáo: </label>
+                            <input type="text" name="" id="religion" style="width: 105px;">
+                        </div>
+                    </div>
+                    <div class="group_information">
+                        <label for="dad-job">Nghề nghiệp:&nbsp;</label>
+                        <input type="text" name="" id="dad-job" style="width: 612px;">
+                    </div>
+                </fieldset>
+                <script>
+                    $(function()
+                    {
+                        $("#form").load("../../form/form.html");
+                    })
+                    function region()
+                    {
+                        var region = ['(Chọn)', 'Kinh', 'Tày', 'Thái', 'Mường', 'Mèo', 'Mạ', 'H\'Mông', 'Dao', 'Gia Rai',
+                        'Ê Đê', 'Ba Na', 'Xơ Đăng', 'Sán Dìu', 'Chăm', 'Cơ Ho', 'Ra Glai', 'X\'Tiêng', 'Bru-Vân Kiều', 'Giáy',
+                        'Cơ Tu', 'Giẻ Triêng', 'M\'nông', 'Thổ', 'Chơ Ro', 'Ô Đu', 'Rơ Măm', 'Chu Ru', 'Lào', 'La Chí', 'La Ha',
+                        'Phù Lá', 'La Hủ', 'Lự', 'Lô Lô', 'Mảng', 'Cơ Lao', 'Brâu', 'Ơ Đu', 'Pu Péo', 'Ro Ngao', 'La Chi', 'La Rê',
+                            'Mơ Nông', 'Bố Y', 'Cống', 'Si La', 'Pu Xang', 'La Hu', 'Lựa', 'Lô', 'Chư Ru', 'Krông', 'Hồi', 'M\'bri'];
+                        var select_region = region.sort();
+                        var selection = document.getElementsByClassName("choose-region");
+                        for (var i in selection)
+                        {
+                            for (j=0; j < select_region.length; j++)
+                            {
+                                console.log(select_region[j]);
+                            }
+                        }
+                    }
+                    region()
+
+                    function numberKeyPress(input)
+                    {
+                        var ip = input.value;
+                        var op = ip.replace(/[^0-9]/g, '');
+                        input.value = op;
+                    }
+                </script>
+            </fieldset>
+        </div>
+        </div><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="loadform.js" ></script>
+    </body>
+</html>

@@ -1,0 +1,48 @@
+html
+{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.form
+{
+    background-color: white;
+    height: 200vh;
+    width: calc(100vw - 325px);
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 0;
+}
+
+#header
+{
+    font-size: 50px;
+    color: darkblue;
+    
+}
+#student-information
+{
+    width: 825px;
+    font-size: 25px;
+    border-color: rgb(230, 230, 230);
+}
+input
+{
+    font-size: 25px;
+}
+.group_information
+{
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+}
+.information
+{
+    z-index: 10;
+    background-color: red;
+    position: absolute;
+}

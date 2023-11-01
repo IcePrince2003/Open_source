@@ -1,0 +1,122 @@
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <style>
+            html
+            {
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            .panel
+            {
+                width: 325px;
+                height: 100vh;
+                background-color: darkblue;
+                margin: 0px;
+                position: fixed;
+                top: 0px;
+                left: 0px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            .menustrip
+            {
+                margin-top: 30px;
+                list-style-type: none;
+                padding: 0px;
+            }
+            .linkpage
+            {
+                font-size: 30px;
+                text-decoration: none;
+                color: white;
+                font-style: normal;
+                display: flex;
+                flex-direction: row;
+                margin-left: 25px;
+            }
+            .label{
+                margin: 0px;
+                font-size: 25px;
+                font-weight: bold;
+            }
+            .tool
+            {
+                height: 60px;
+                width: 325px;
+                display: flex;
+                align-items: center;
+                justify-content: left;
+            }
+            .tool:hover
+            {
+                cursor: pointer;
+                background-color: lightgray;
+            }
+            .tool:hover p
+            {
+                color: darkblue;
+            }
+            .tool:hover i
+            {
+                color: darkblue;
+            }
+            .fas
+            {
+                font-size: 30px; color: white; 
+            }
+            .fa-power-off
+            {
+                font-size: 40px; position: relative; top: 110px; color: rgb(175, 175, 255);
+            }
+            .fa-power-off:hover
+            {
+                color: rgb(255, 85, 85);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="panel">
+            <img src="avatar.png" alt="" id="avatars" style="height: 80px; width: 80px; border-radius: 50%; margin-top: 30px;">
+            <ul class="menustrip">
+                <li class="tool" style="margin-top: 0px;">
+                    <a href="../../homepage/homepage.html" class="linkpage">
+                        <i class="fas fa-home" style="margin-right: 17px;"></i>
+                        <p class="label">Trang chủ</p>
+                    </a>
+                </li>
+                <li class="tool">
+                    <a href="" class="linkpage">
+                        <i class="fas fa-users" style="margin-right: 15px;"></i>
+                        <p class="label">Quản lý học sinh</p>
+                    </a>
+                </li>
+                <li class="tool">
+                    <a href="" class="linkpage">
+                        <i class="fas fa-school" style="margin-right: 17px;"></i>
+                        <p class="label">Danh sách lớp</p>
+                    </a>
+                </li>
+                <li class="tool">
+                    <a href="" class="linkpage">
+                        <i class="fas fa-marker" style="margin-right: 23px;"></i>
+                        <p class="label">Quản lý điểm</p>
+                    </a>
+                </li>
+                <li class="tool">
+                    <a href="" class="linkpage">
+                        <i class="fas"></i>
+                        <p class="label"></p>
+                    </a>
+                </li>
+                <li class="tool">
+                    <a href="" class="linkpage">
+                        <i class="fas"></i>
+                        <p class="label"></p>
+                    </a>
+                </li>
+            </ul>
+            <a class="login" href="../index.html" >
+                <i class="fas fa-power-off"></i>
+            </a>
+        </div>
+    </body>
